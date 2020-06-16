@@ -37,12 +37,12 @@
 }
 
 .logo {
-  position: absolute;
   background-repeat: no-repeat;
   width: 183px;
 }
 
 .logo_place_header {
+  position: absolute;
   top: 30px;
   left: 64px;
   z-index: 1;
@@ -114,11 +114,6 @@
 .two-columns__paragraph:first-of-type {
   margin-top: 0;
 }
-/*
-.two-columns__paragraph_nomargin {
-  margin: 0;
-}
-*/
 
 .two-columns__span-accent {
   font-weight: bold;
@@ -128,6 +123,7 @@
 
 .digits {
   margin: 100px auto;
+  position: relative;
 }
 
 .section-title {
@@ -137,6 +133,7 @@
   font-weight: bold;
   text-align: center;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .section-subtitle {
@@ -249,14 +246,18 @@
 
 .table_theme_dark {
   color: white;
+  z-index: 1;
 }
 
 .section-title_theme_dark {
   color: white;
+  position: relative; /*добавил для корректного отображения треугольника*/
+  z-index: 1; /*добавил для корректного отображения треугольника*/
 }
 
 .section-subtitle_theme_dark {
   color: white;
+  z-index: 1;
 }
 
 .table__heading_theme_dark {
@@ -303,6 +304,9 @@
 
 .footer__column_content_copyright {
   flex-basis: 711px;
+  display: flex;
+  flex-direction: column; /*поправил для логотипа и автора*/
+  justify-content: space-between;
 }
 
 .footer__column_content_info {
@@ -322,7 +326,6 @@
 
 .footer__author {
   margin: 18px 0;
-  position: absolute;
   bottom: 0;
   font-size: 18px;
   line-height: 25px;
