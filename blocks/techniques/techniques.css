@@ -1,8 +1,9 @@
 @import url(../section-title/section-title.css);
 @import url(../section-subtitle/section-subtitle.css);
-@import url(../table/table.css);
+@import url(../cards/cards.css);
 
-.digits {
-  margin: 100px auto;
+.techniques {
+  width: 80%;
+  margin: 100px auto 0;
   position: relative;
 }
